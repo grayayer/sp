@@ -1,0 +1,43 @@
+/*
+
+Theme Name: Scott Pemberton
+Theme URI: http://www.woothemes.com/2012/01/unsigned/
+
+Description: A child theme of WooThemes Unsigned.
+
+Template: unsigned
+
+Author: Gray Ayer
+
+Author URI: http://www.studiok40.com
+
+Version: 1.1
+
+Updated: 8/20/14
+
+*/
+
+
+@import url("../unsigned/style.css");
+/* CSS Document */
+
+/******* Color definitions 
+
+darkblue: #25728D
+lighter blue: #00A79D;
+
+red gradient: goes from #7A1717 to #B62323
+
+*/
+
+@import 'background';
+@import 'header';
+@import 'navigation';
+@import 'typography';
+@import 'sidebar';
+@import 'misc';
+@import 'footer';
+@import 'homepage';
+@import 'store';
+
+

@@ -1,0 +1,130 @@
+
+
+/********* sidebar *********/
+.widget.widget_events ul img {
+    clear: both;
+    float: none;
+    margin: 0 30px 15px;
+}
+
+
+#widget_tourdates-2  div:first-of-type {
+		display:none; /*so that there isn't any descriptive text of which "tour" this is*/
+}
+
+aside#connect div.container div p:first-of-type {
+		display:none; /*so that there isn't any descriptive text above the sign up form*/
+}
+
+div.primary div#widget_tourdates-2.widget table tbody tr td:last-of-type, div#widget_tourdates-2.widget table thead tr th:last-of-type, p.event-widget-venue {
+	display:none;
+}
+
+table td { /*makes sure that the defense table has enough padding on the right side to accommodate the 4/14/12 format*/
+    padding: 6px 10px;
+}
+
+/*music player*/
+.ttw-music-player li:nth-child(n+10) .title {
+    padding-left: 20px;
+}
+
+.ttw-music-player .album-info div.album-cover, 
+.ttw-music-player .album-info,
+div.player div.album-info div.album-content,
+div.player div.album-info div.album-content p.album-title,
+div.player div.album-info div.album-content p.description {
+    display: none !important; /*eliminates the description box so the widget is simplified*/
+}
+/*
+div.player div.album-info div.album-content p.album-title {
+	font-style:italic;
+	font-weight:.7em;
+}
+*/
+.ttw-music-player .player-controls, div.ttw-music-player div.tracklist ol.tracks li.track {
+	border-bottom:none;
+}
+
+.ttw-music-player .tracklist li {
+    font-size: 1.167em;
+    padding: 5px 0 5px 15px;
+    position: relative;
+}
+
+.ttw-music-player .tracklist ol {
+    margin: 0;
+    overflow: hidden;
+    padding: 7px 0;
+}
+
+
+.checkout ul.payment_methods .payment_box p {
+	color: #832121;
+}
+
+
+
+/************* NEWSLETTER SIGNUP *************/
+div.primary .gform_wrapper .gform_footer {
+    margin: 0;
+    padding: 0;
+}
+
+div.gform_body ul.gform_fields li.gfield {
+    border-bottom:0;
+}
+
+div.primary div#gform_widget-2.widget div#gform_wrapper_1 div.gform_body ul#gform_fields_1.gform_fields {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0;
+}
+
+div.primary div#gform_widget-2.widget div#gform_wrapper_1 {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #201F1F;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 -1px 0 0 #3B3A3A;
+    -webkit-box-shadow: 0 -1px 0 0 #3B3A3A;
+    -moz-box-shadow: 0 -1px 0 0 #3B3A3A;
+}
+
+div.widget form div.gform_body ul.gform_fields li.gfield.clear_input label.gfield_label {
+    display:none;
+}
+
+div.widget form div.gform_body ul.gform_fields li.gfield.clear_input {
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+div#gform_wrapper_1 form#gform_1 div.gform_body ul#gform_fields_1.gform_fields li#field_1_1.gfield div.gfield_description {
+    font-size:1em;
+}
+
+ul#gform_fields_1.gform_fields li.gfield div.ginput_container input.medium {
+    width:95%;
+}
+
+div#gform_wrapper_1 form#gform_1 div.gform_footer {
+    padding:5px 10px;
+}
+
+
+/*sharing buttons (this aligns the text and buttons on one line, rather than two*/
+div.sharedaddy div.sd-content  {
+    float: left;
+    margin: -2px 0 0;
+    width: auto;
+}
+
+div.sharedaddy h3.sd-title {
+    width:auto !important;
+    float:left !important;
+    margin-right:10px !important;
+    }
+

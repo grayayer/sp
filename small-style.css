@@ -1,0 +1,24 @@
+/*
+
+Theme Name: Scott Pemberton
+
+Theme URI: http://www.woothemes.com/2012/01/unsigned/
+
+Description: A child theme of WooThemes Unsigned, specifically for small screen resolutions
+
+Template: unsigned
+
+Author: Gray Ayer
+
+Author URI: http://www.studiok40.com
+
+Version: 1.0
+
+*/
+
+
+/* CSS Document */
+
+#corners-top, #corners-bottom {
+	display:none;
+}

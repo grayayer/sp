@@ -1,0 +1,46 @@
+
+/************* TYPOGRAPHY ***********/
+
+
+
+body {
+	color:#FFF;
+	background-color:transparent !important;
+}
+
+a, .ttw-music-player .tracklist {
+	color:#0CCCC8; /*a teal color*/
+}
+
+a:hover {
+    color: #88CCC9;
+}
+
+.entry blockquote p {
+    color: #32D3B8; /*A bright blue*/
+}
+
+.archive_header, header h1.out-box {
+font-family: "Fugaz One", serif;
+font-weight: normal;
+}
+
+.widget h3, .widget h2 {
+	text-shadow: 1px 2px 0px #18516A;
+}
+h1, h2{
+font-family: "Fugaz One", serif !important;
+text-shadow: 1px 2px 0px #18516A;
+}
+
+ul.products .product h3 {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+p.wp-caption-text {
+	color:#242021;
+}
+
+.entry p.info, .entry li.info {
+    color: #444 !important;
+}

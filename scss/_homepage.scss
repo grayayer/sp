@@ -1,0 +1,38 @@
+
+
+/*************** HOMEPAGE ****************/
+/*hides the thumbnails on the front page while in temporary mode
+ul.video-thumbnails {display: none;}
+
+.widget_woo_videos .video-thumbnails li .rounded-border { 
+	display:none;
+}
+*/
+
+
+.flexslider .slides img.alignleft {
+	padding: 0 15px 15px 0;
+}
+
+.slide { 
+    padding: 10px;
+	overflow:auto; /*ensures that if images are inserted that are quite tall, that this area will expand to fit that*/
+}
+
+
+div.homepage-facebook {
+	float:right;
+	width: 77px;
+}
+
+div#facebook-like-button-generator h3 {
+	display:none;
+}
+
+.connect_widget .like_button_dark .connect_widget_text, .connect_widget .like_button_dark .connect_widget_confirmation {
+	color:#CCC !important;
+}
+
+.home #content {
+	clear: right;
+}

@@ -1,0 +1,11 @@
+
+/***************** FOOTER *****************/
+
+html body.home div#wrapper footer#footer.col-full div#credit.col-right {
+	z-index:10;
+}
+
+html body.home div#wrapper footer#footer.col-full, div#copyright.col-left p, div#credit.col-right a {
+    color: #FFFFFF;
+    font-weight: bold;
+	}

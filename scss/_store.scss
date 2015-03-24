@@ -1,0 +1,66 @@
+
+
+/******************* SHOP ***********************/
+
+ul.products .product.first {
+    margin-left: 0;
+}
+
+ul.products {
+    padding: 5px 10px;
+}
+
+table.cart a.button {
+	padding:.5em 1em;
+}
+
+table.cart a.button.checkout-button {
+    margin: 0 10px;
+}
+
+
+div#uniform-pa_size {
+	margin-left:10px;
+}
+
+table.variations div option, form.woocommerce_ordering option, select option{
+	background:#FAFAFA;
+	color:#7A7A7A;
+	padding-left:5px;
+	font-weight:normal;
+}
+
+
+div.cross-sells ul.products {
+    width: 90%;
+}
+
+div.cross-sells ul.products li.product { /*eliminates the bullet in the cross sell suggested product*/	
+    list-style: none outside none;
+}
+
+td.product-quantity div.quantity.buttons_added input.input-text.qty.text { /*attempt to shrink the quantity field down so both increase & decrease buttons fit on line*/
+	width:20%;
+}
+
+.single-product .summary .single_variation_wrap .single_variation {
+	background:none;
+}
+
+div.form-row.wooms {
+	width:54%;
+	padding-left: 5px;
+}
+
+span.wooms_label {
+	padding-left:7px;
+}
+
+.checkout ul.payment_methods {
+	padding: 0 0 0 3px;
+	
+}
+
+.checkout ul.payment_methods + .form-row #place_order { /*moves the button up to save space*/
+    margin-top: -22px;
+}

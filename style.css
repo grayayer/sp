@@ -1,0 +1,744 @@
+/*
+
+Theme Name: Scott Pemberton
+Theme URI: http://www.woothemes.com/2012/01/unsigned/
+
+Description: A child theme of WooThemes Unsigned.
+
+Template: unsigned
+
+Author: Gray Ayer
+
+Author URI: http://www.studiok40.com
+
+Version: 1.1
+
+Updated: 8/20/14
+
+*/
+@import url("../unsigned/style.css");
+/* CSS Document */
+/******* Color definitions 
+
+darkblue: #25728D
+lighter blue: #00A79D;
+
+red gradient: goes from #7A1717 to #B62323
+
+*/
+/* line 2, _background.scss */
+#header-wrap {
+  background-color: #000 !important;
+  /*currently it's set to an alpha transparency to allow for the background images to show through*/
+}
+
+/************* BACKGROUND ***********/
+/* line 8, _background.scss */
+html {
+  background: #25728d;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #25728d 0%, #00a79d 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #25728d), color-stop(100%, #00a79d));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #25728d 0%, #00a79d 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #25728d 0%, #00a79d 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #25728d 0%, #00a79d 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #25728d 0%, #00a79d 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#25728d', endColorstr='#00a79d',GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 19, _background.scss */
+body {
+  background: url(images/clouds3.png) 0 0 no-repeat, url(images/clouds2.png) 0 0 no-repeat, url(images/clouds1.png) 0 0 no-repeat, url(images/bg-header-sunshine-offcenter.png) top center no-repeat;
+}
+
+/* line 23, _background.scss */
+.cloud1 {
+  width: 2000px;
+  height: 692px;
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  background: url(images/cloud1.png) no-repeat;
+  margin-left: -1000px;
+  margin-top: -346px;
+  z-index: -1;
+}
+
+/* line 35, _background.scss */
+#topclouds {
+  background-image: url(images/top-clouds.png);
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+}
+
+/*
+#sunshine {
+	background: url(images/bg-header-sunshine-offcenter.png) repeat-X 5% 5%;
+	background-color:transparent;
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 0;
+}
+
+#cloudbackground {
+	background: url(images/clouds3.png) repeat-X 5% 5%;
+	background-color:transparent;
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 0;
+}
+
+#cloudmidground {
+	background: url(images/clouds2.png) repeat-X 50% 50%;
+	background-color:transparent;
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 0;
+}*/
+/* line 66, _background.scss */
+#cloudforeground {
+  background: url("images/clouds1.png") repeat-x transparent;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+/* line 76, _background.scss */
+#wrapper {
+  Xbackground: url(images/clouds.png) repeat-x;
+  position: relative;
+}
+
+/* line 83, _background.scss */
+#corners-top, #corners-bottom {
+  pointer-events: none;
+}
+
+/* line 87, _background.scss */
+#corners-top {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  min-width: 1260px;
+}
+
+/* line 95, _background.scss */
+#corners-bottom {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  width: 100%;
+  min-width: 1260px;
+  margin-left: -20px;
+  /*makes up for the fact that the wrapper it's nested in has a 20px padding. I've stuck it in here so that it gets layered correctly in regards to the other footer data.*/
+}
+
+/* line 104, _background.scss */
+.sprite {
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: url(images/corners-sprite.png) no-repeat;
+  margin: 10px;
+}
+
+/* line 112, _background.scss */
+#corners-top-left.sprite {
+  background-position: 0 0;
+  float: left;
+}
+
+/* line 117, _background.scss */
+#corners-top-right.sprite {
+  background-position: -105px 0;
+  float: right;
+}
+
+/* line 122, _background.scss */
+#corners-bottom-left.sprite {
+  background-position: 0 -105px;
+  float: left;
+}
+
+/* line 127, _background.scss */
+#corners-bottom-right.sprite {
+  background-position: -105px -105px;
+  float: right;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 133, _background.scss */
+  #corners-top, #corners-bottom {
+    display: none;
+  }
+}
+/***************** HEADER *****************/
+/* line 5, _header.scss */
+#header {
+  padding: 15px 0 10px;
+  position: relative;
+  background-color: transparent !important;
+  z-index: 10;
+}
+
+/* line 12, _header.scss */
+#header-wrap {
+  height: 234px;
+  border: none;
+  background-color: transparent !important;
+  padding: 0;
+}
+
+/* line 19, _header.scss */
+#header #logo {
+  background: url(images/logo-bicycle-rocker.png) no-repeat left top;
+  width: 333px;
+  height: 178px;
+  display: block;
+}
+
+/* line 26, _header.scss */
+#header #logo img {
+  display: none;
+}
+
+/* line 30, _header.scss */
+#social {
+  Xwidth: 180px;
+  height: 25px;
+  display: block;
+  Xbackground: url(images/social-sprite.png) top;
+  top: 0;
+  float: right;
+}
+
+/* line 39, _header.scss */
+#social:hover {
+  Xbackground: url(images/social-sprite.png) center 49px;
+}
+
+/* line 43, _header.scss */
+#social:active {
+  Xbackground-position: bottom;
+}
+
+/* line 47, _header.scss */
+#social div {
+  float: left;
+  height: 25px;
+  display: block;
+}
+
+/* line 53, _header.scss */
+#social div.fb {
+  background: url(images/social-sprite.png) left top;
+  width: 35px;
+}
+
+/* line 58, _header.scss */
+#social div.fb:hover {
+  background-position: 0 49px;
+}
+
+/* line 62, _header.scss */
+#social div.fb:active {
+  background-position: 0 100px;
+}
+
+/* line 66, _header.scss */
+#social div.twitter {
+  background: url(images/social-sprite.png) 144px top;
+  width: 40px;
+}
+
+/* line 71, _header.scss */
+#social div.twitter:hover {
+  background-position: 144px 49px;
+}
+
+/* line 75, _header.scss */
+#social div.twitter:active {
+  background-position: 144px 100px;
+}
+
+/* line 80, _header.scss */
+#social div.youtube {
+  background: url(images/social-sprite.png) 100px top;
+  width: 55px;
+  margin-right: 4px;
+}
+
+/* line 86, _header.scss */
+#social div.youtube:hover {
+  background-position: 100px 49px;
+}
+
+/* line 90, _header.scss */
+#social div.youtube:active {
+  background-position: 100px 100px;
+}
+
+/* line 94, _header.scss */
+#social div.email {
+  background: url(images/social-sprite.png) 40px top;
+  width: 40px;
+}
+
+/* line 99, _header.scss */
+#social div.email:hover {
+  background-position: 40px 49px;
+}
+
+/* line 103, _header.scss */
+#social div.email:active {
+  background-position: 40px 100px;
+}
+
+/* line 108, _header.scss */
+.GBLikeButton {
+  float: right;
+  position: relative;
+  top: 8px;
+  margin-left: 10px;
+}
+
+/* line 115, _header.scss */
+#navigation {
+  clear: none;
+}
+
+/* line 119, _header.scss */
+#header {
+  clear: both;
+  padding: 20px 0 10px;
+  position: relative;
+}
+
+/* line 2, _navigation.scss */
+#navigation .nav a {
+  color: #FFFFFF;
+  font: 22px/1.4em 'Fugaz One',arial,sans-serif;
+  text-shadow: 1px 2px 0px #18516A;
+  padding: 5px 0.75em;
+}
+
+/* line 9, _navigation.scss */
+#navigation .nav a:hover {
+  color: #7A1717;
+  text-shadow: 1px 2px 0px #221F21;
+}
+
+/* line 14, _navigation.scss */
+#navigation {
+  /* clear: both; */
+  float: right;
+  margin-top: 4px;
+}
+
+/* line 20, _navigation.scss */
+nav#navigation ul#main-nav.nav li.menu-item:first-of-type a {
+  padding-left: 0px;
+}
+
+/* line 24, _navigation.scss */
+nav#navigation ul#main-nav.nav li.menu-item:last-of-type a {
+  padding-right: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 29, _navigation.scss */
+  nav#navigation ul#main-nav.nav {
+    float: left;
+    padding: 20px;
+  }
+  /* line 32, _navigation.scss */
+  nav#navigation ul#main-nav.nav li {
+    float: left;
+  }
+  /* line 34, _navigation.scss */
+  nav#navigation ul#main-nav.nav li.menu-item:first-of-type a {
+    padding-left: 0.75em !important;
+  }
+  /* line 37, _navigation.scss */
+  nav#navigation ul#main-nav.nav li.menu-item:last-of-type a {
+    padding-right: 5px !important;
+  }
+  /* line 39, _navigation.scss */
+  nav#navigation ul#main-nav.nav li.menu-item:last-of-type a.sf-with-ul {
+    padding-right: 20px !important;
+  }
+}
+/************* TYPOGRAPHY ***********/
+/* line 6, _typography.scss */
+body {
+  color: #FFF;
+  background-color: transparent !important;
+}
+
+/* line 11, _typography.scss */
+a, .ttw-music-player .tracklist {
+  color: #0CCCC8;
+  /*a teal color*/
+}
+
+/* line 15, _typography.scss */
+a:hover {
+  color: #88CCC9;
+}
+
+/* line 19, _typography.scss */
+.entry blockquote p {
+  color: #32D3B8;
+  /*A bright blue*/
+}
+
+/* line 23, _typography.scss */
+.archive_header, header h1.out-box {
+  font-family: "Fugaz One", serif;
+  font-weight: normal;
+}
+
+/* line 28, _typography.scss */
+.widget h3, .widget h2 {
+  text-shadow: 1px 2px 0px #18516A;
+}
+
+/* line 31, _typography.scss */
+h1, h2 {
+  font-family: "Fugaz One", serif !important;
+  text-shadow: 1px 2px 0px #18516A;
+}
+
+/* line 36, _typography.scss */
+ul.products .product h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 40, _typography.scss */
+p.wp-caption-text {
+  color: #242021;
+}
+
+/* line 44, _typography.scss */
+.entry p.info, .entry li.info {
+  color: #444 !important;
+}
+
+/********* sidebar *********/
+/* line 4, _sidebar.scss */
+.widget.widget_events ul img {
+  clear: both;
+  float: none;
+  margin: 0 30px 15px;
+}
+
+/* line 11, _sidebar.scss */
+#widget_tourdates-2 div:first-of-type {
+  display: none;
+  /*so that there isn't any descriptive text of which "tour" this is*/
+}
+
+/* line 15, _sidebar.scss */
+aside#connect div.container div p:first-of-type {
+  display: none;
+  /*so that there isn't any descriptive text above the sign up form*/
+}
+
+/* line 19, _sidebar.scss */
+div.primary div#widget_tourdates-2.widget table tbody tr td:last-of-type, div#widget_tourdates-2.widget table thead tr th:last-of-type, p.event-widget-venue {
+  display: none;
+}
+
+/* line 23, _sidebar.scss */
+table td {
+  /*makes sure that the defense table has enough padding on the right side to accommodate the 4/14/12 format*/
+  padding: 6px 10px;
+}
+
+/*music player*/
+/* line 28, _sidebar.scss */
+.ttw-music-player li:nth-child(n+10) .title {
+  padding-left: 20px;
+}
+
+/* line 32, _sidebar.scss */
+.ttw-music-player .album-info div.album-cover,
+.ttw-music-player .album-info,
+div.player div.album-info div.album-content,
+div.player div.album-info div.album-content p.album-title,
+div.player div.album-info div.album-content p.description {
+  display: none !important;
+  /*eliminates the description box so the widget is simplified*/
+}
+
+/*
+div.player div.album-info div.album-content p.album-title {
+	font-style:italic;
+	font-weight:.7em;
+}
+*/
+/* line 45, _sidebar.scss */
+.ttw-music-player .player-controls, div.ttw-music-player div.tracklist ol.tracks li.track {
+  border-bottom: none;
+}
+
+/* line 49, _sidebar.scss */
+.ttw-music-player .tracklist li {
+  font-size: 1.167em;
+  padding: 5px 0 5px 15px;
+  position: relative;
+}
+
+/* line 55, _sidebar.scss */
+.ttw-music-player .tracklist ol {
+  margin: 0;
+  overflow: hidden;
+  padding: 7px 0;
+}
+
+/* line 62, _sidebar.scss */
+.checkout ul.payment_methods .payment_box p {
+  color: #832121;
+}
+
+/************* NEWSLETTER SIGNUP *************/
+/* line 69, _sidebar.scss */
+div.primary .gform_wrapper .gform_footer {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 74, _sidebar.scss */
+div.gform_body ul.gform_fields li.gfield {
+  border-bottom: 0;
+}
+
+/* line 78, _sidebar.scss */
+div.primary div#gform_widget-2.widget div#gform_wrapper_1 div.gform_body ul#gform_fields_1.gform_fields {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0;
+}
+
+/* line 85, _sidebar.scss */
+div.primary div#gform_widget-2.widget div#gform_wrapper_1 {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #201F1F;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 -1px 0 0 #3B3A3A;
+  -webkit-box-shadow: 0 -1px 0 0 #3B3A3A;
+  -moz-box-shadow: 0 -1px 0 0 #3B3A3A;
+}
+
+/* line 96, _sidebar.scss */
+div.widget form div.gform_body ul.gform_fields li.gfield.clear_input label.gfield_label {
+  display: none;
+}
+
+/* line 100, _sidebar.scss */
+div.widget form div.gform_body ul.gform_fields li.gfield.clear_input {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* line 105, _sidebar.scss */
+div#gform_wrapper_1 form#gform_1 div.gform_body ul#gform_fields_1.gform_fields li#field_1_1.gfield div.gfield_description {
+  font-size: 1em;
+}
+
+/* line 109, _sidebar.scss */
+ul#gform_fields_1.gform_fields li.gfield div.ginput_container input.medium {
+  width: 95%;
+}
+
+/* line 113, _sidebar.scss */
+div#gform_wrapper_1 form#gform_1 div.gform_footer {
+  padding: 5px 10px;
+}
+
+/*sharing buttons (this aligns the text and buttons on one line, rather than two*/
+/* line 119, _sidebar.scss */
+div.sharedaddy div.sd-content {
+  float: left;
+  margin: -2px 0 0;
+  width: auto;
+}
+
+/* line 125, _sidebar.scss */
+div.sharedaddy h3.sd-title {
+  width: auto !important;
+  float: left !important;
+  margin-right: 10px !important;
+}
+
+/************ misc *********/
+/* line 3, _misc.scss */
+.sharing div.googleplus1_button {
+  width: 45px;
+}
+
+/* line 7, _misc.scss */
+div.pp_details p.pp_description {
+  color: grey !important;
+  font-size: 14px !important;
+  font-weight: bold;
+  line-height: 24px !important;
+}
+
+/* line 14, _misc.scss */
+img#wpstats {
+  /*hides the smiley face*/
+  display: none;
+}
+
+/* line 18, _misc.scss */
+a.button, a.comment-reply-link, #commentform #submit, .submit, input[type="submit"], input.button, button.button {
+  text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.3);
+  -webkit-text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+/***************** FOOTER *****************/
+/* line 4, _footer.scss */
+html body.home div#wrapper footer#footer.col-full div#credit.col-right {
+  z-index: 10;
+}
+
+/* line 8, _footer.scss */
+html body.home div#wrapper footer#footer.col-full, div#copyright.col-left p, div#credit.col-right a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/*************** HOMEPAGE ****************/
+/*hides the thumbnails on the front page while in temporary mode
+ul.video-thumbnails {display: none;}
+
+.widget_woo_videos .video-thumbnails li .rounded-border { 
+	display:none;
+}
+*/
+/* line 13, _homepage.scss */
+.flexslider .slides img.alignleft {
+  padding: 0 15px 15px 0;
+}
+
+/* line 17, _homepage.scss */
+.slide {
+  padding: 10px;
+  overflow: auto;
+  /*ensures that if images are inserted that are quite tall, that this area will expand to fit that*/
+}
+
+/* line 23, _homepage.scss */
+div.homepage-facebook {
+  float: right;
+  width: 77px;
+}
+
+/* line 28, _homepage.scss */
+div#facebook-like-button-generator h3 {
+  display: none;
+}
+
+/* line 32, _homepage.scss */
+.connect_widget .like_button_dark .connect_widget_text, .connect_widget .like_button_dark .connect_widget_confirmation {
+  color: #CCC !important;
+}
+
+/* line 36, _homepage.scss */
+.home #content {
+  clear: right;
+}
+
+/******************* SHOP ***********************/
+/* line 5, _store.scss */
+ul.products .product.first {
+  margin-left: 0;
+}
+
+/* line 9, _store.scss */
+ul.products {
+  padding: 5px 10px;
+}
+
+/* line 13, _store.scss */
+table.cart a.button {
+  padding: .5em 1em;
+}
+
+/* line 17, _store.scss */
+table.cart a.button.checkout-button {
+  margin: 0 10px;
+}
+
+/* line 22, _store.scss */
+div#uniform-pa_size {
+  margin-left: 10px;
+}
+
+/* line 26, _store.scss */
+table.variations div option, form.woocommerce_ordering option, select option {
+  background: #FAFAFA;
+  color: #7A7A7A;
+  padding-left: 5px;
+  font-weight: normal;
+}
+
+/* line 34, _store.scss */
+div.cross-sells ul.products {
+  width: 90%;
+}
+
+/* line 38, _store.scss */
+div.cross-sells ul.products li.product {
+  /*eliminates the bullet in the cross sell suggested product*/
+  list-style: none outside none;
+}
+
+/* line 42, _store.scss */
+td.product-quantity div.quantity.buttons_added input.input-text.qty.text {
+  /*attempt to shrink the quantity field down so both increase & decrease buttons fit on line*/
+  width: 20%;
+}
+
+/* line 46, _store.scss */
+.single-product .summary .single_variation_wrap .single_variation {
+  background: none;
+}
+
+/* line 50, _store.scss */
+div.form-row.wooms {
+  width: 54%;
+  padding-left: 5px;
+}
+
+/* line 55, _store.scss */
+span.wooms_label {
+  padding-left: 7px;
+}
+
+/* line 59, _store.scss */
+.checkout ul.payment_methods {
+  padding: 0 0 0 3px;
+}
+
+/* line 64, _store.scss */
+.checkout ul.payment_methods + .form-row #place_order {
+  /*moves the button up to save space*/
+  margin-top: -22px;
+}

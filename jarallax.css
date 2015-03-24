@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+.cloud1 {
+	width:2000px;
+	height:692px;
+	left:50%;
+	top:50%;
+	position:fixed;
+	background:url(images/cloud1.png) no-repeat;
+	margin-left:-1000px;
+	margin-top:-346px;
+	z-index:-1;
+}

@@ -1,0 +1,136 @@
+
+#header-wrap{
+	background-color:#000 !important; /*currently it's set to an alpha transparency to allow for the background images to show through*/
+}
+
+/************* BACKGROUND ***********/
+
+html {
+		background: #25728d; /* Old browsers */
+background: -moz-linear-gradient(top,  #25728d 0%, #00a79d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#25728d), color-stop(100%,#00a79d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #25728d 0%,#00a79d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #25728d 0%,#00a79d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #25728d 0%,#00a79d 100%); /* IE10+ */
+background: linear-gradient(top,  #25728d 0%,#00a79d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25728d', endColorstr='#00a79d',GradientType=0 ); /* IE6-9 */
+}
+
+body {
+	background:url(images/clouds3.png) 0 0 no-repeat, url(images/clouds2.png) 0 0 no-repeat, url(images/clouds1.png) 0 0 no-repeat, url(images/bg-header-sunshine-offcenter.png) top center no-repeat;
+	}
+
+.cloud1 {
+	width:2000px;
+	height:692px;
+	left:50%;
+	top:50%;
+	position:fixed;
+	background:url(images/cloud1.png) no-repeat;
+	margin-left:-1000px;
+	margin-top:-346px;
+	z-index:-1;
+}
+
+#topclouds {
+  background-image: url(images/top-clouds.png);
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+}
+
+/*
+#sunshine {
+	background: url(images/bg-header-sunshine-offcenter.png) repeat-X 5% 5%;
+	background-color:transparent;
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 0;
+}
+
+#cloudbackground {
+	background: url(images/clouds3.png) repeat-X 5% 5%;
+	background-color:transparent;
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 0;
+}
+
+#cloudmidground {
+	background: url(images/clouds2.png) repeat-X 50% 50%;
+	background-color:transparent;
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 0;
+}*/
+
+#cloudforeground {
+    background: url("images/clouds1.png") repeat-x transparent;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+#wrapper {
+		Xbackground:url(images/clouds.png) repeat-x;
+		position:relative;
+
+}
+
+
+#corners-top, #corners-bottom {
+	pointer-events:none;
+}
+
+#corners-top {
+	position:absolute;
+	top:0;
+	z-index:5;
+	width:100%;
+	min-width:1260px;
+}
+
+#corners-bottom {
+	position:absolute;
+	bottom:0;
+	z-index:5;
+	width:100%;
+	min-width:1260px;
+	margin-left:-20px; /*makes up for the fact that the wrapper it's nested in has a 20px padding. I've stuck it in here so that it gets layered correctly in regards to the other footer data.*/
+}
+
+.sprite {
+	width:100px;
+	height:100px;
+	display:block;
+	background:url(images/corners-sprite.png) no-repeat;
+	margin:10px;
+}
+
+#corners-top-left.sprite {
+	background-position: 0 0;
+	float:left;
+}
+
+#corners-top-right.sprite {
+	background-position: -105px 0; 
+	float:right;
+}	
+
+#corners-bottom-left.sprite {
+	background-position: 0 -105px; 
+	float:left;
+}
+
+#corners-bottom-right.sprite {
+	background-position: -105px -105px; 
+	float:right;
+}
+
+@media only screen and (max-width: 767px) {
+	#corners-top, #corners-bottom {
+		display: none;
+	}
+}

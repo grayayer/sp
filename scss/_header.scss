@@ -1,0 +1,123 @@
+
+
+/***************** HEADER *****************/
+
+#header {
+    padding: 15px 0 10px;
+	position:relative;
+	background-color:transparent !important;
+	z-index:10;
+ }
+
+#header-wrap {
+	height:234px;
+	border:none;
+	background-color:transparent !important;
+	padding:0;
+}
+
+#header #logo {
+	background:url(images/logo-bicycle-rocker.png) no-repeat left top;
+	width:333px;
+	height:178px;
+	display:block;
+}	
+
+#header #logo img {
+	display:none;
+}
+
+#social {
+	Xwidth:180px;
+	height:25px;
+	display:block;
+	Xbackground:url(images/social-sprite.png) top;
+	top:0;
+	float:right;
+}
+
+#social:hover {
+	Xbackground:url(images/social-sprite.png) center 49px;
+}
+	
+#social:active {
+	Xbackground-position:bottom;
+}
+
+#social div {
+	float:left;
+	height:25px;
+	display:block;
+}
+
+#social div.fb {
+	background:url(images/social-sprite.png) left top;
+	width:35px;
+}
+	
+#social div.fb:hover {
+	background-position: 0 49px;
+}
+	
+#social div.fb:active {
+	background-position:0 100px;
+}
+
+#social div.twitter {
+	background:url(images/social-sprite.png) 144px  top;
+	width:40px;
+}
+	
+#social div.twitter:hover {
+	background-position: 144px 49px;
+}
+	
+#social div.twitter:active {
+	background-position:144px 100px;
+}
+
+
+#social div.youtube {
+	background:url(images/social-sprite.png) 100px  top;
+	width: 55px;
+	margin-right: 4px;
+}
+	
+#social div.youtube:hover {
+	background-position: 100px 49px;
+}
+	
+#social div.youtube:active {
+	background-position:100px 100px;
+}
+
+#social div.email {
+	background:url(images/social-sprite.png) 40px  top;
+	width:40px;
+}
+	
+#social div.email:hover {
+	background-position: 40px 49px;
+}
+	
+#social div.email:active {
+	background-position:40px 100px;
+}
+
+
+.GBLikeButton {
+	float:right;
+    position: relative;
+    top: 8px;
+	margin-left: 10px;
+}
+
+#navigation {
+    clear: none;
+}
+
+#header {
+    clear: both;
+    padding: 20px 0 10px;
+    position: relative;
+}

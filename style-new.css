@@ -1,0 +1,192 @@
+/*
+
+Theme Name: Scott Pemberton
+
+Theme URI: http://www.woothemes.com/2012/01/unsigned/
+
+Description: A child theme of WooThemes Unsigned.
+
+Template: unsigned
+
+Author: Gray Ayer
+
+Author URI: http://www.studiok40.com
+
+Version: 1.0
+
+*/
+
+/*color definitions 
+
+darkblue: #25728D
+lighter blue: #00A79D;
+
+*/
+
+@import url("../unsigned/style.css");
+/* CSS Document */
+
+
+#header-wrap{
+	Xbackground-color:#000 !important; /*currently it's set to an alpha transparency to allow for the background images to show through*/
+}
+
+/************* TYPOGRAPHY ***********/
+
+body {
+    background-attachment: fixed;
+	color:#FFF;
+background-image: linear-gradient(bottom, #00A79C 24%, #25718D 62%);
+background-image: -o-linear-gradient(bottom, #00A79C 24%, #25718D 62%);
+background-image: -moz-linear-gradient(bottom, #00A79C 24%, #25718D 62%);
+background-image: -webkit-linear-gradient(bottom, #00A79C 24%, #25718D 62%);
+background-image: -ms-linear-gradient(bottom, #00A79C 24%, #25718D 62%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.24, #00A79C),
+	color-stop(0.62, #25718D)
+	;
+}
+
+a {
+	color:#00AAA5;
+}
+
+a:hover {
+	color:#018790;
+}
+
+.entry blockquote p {
+    color: #32D3B8; /*A bright blue*/
+}
+
+/********* sidebar *********/
+.widget.widget_events ul img {
+    clear: both;
+    float: none;
+    margin: 0 30px 15px;
+}
+
+
+#widget_tourdates-2  div:first-of-type {
+		display:none; /*so that there isn't any descriptive text of which "tour" this is*/
+}
+
+aside#connect div.container div p:first-of-type {
+		display:none; /*so that there isn't any descriptive text above the sign up form*/
+}
+
+/*music player*/
+.ttw-music-player li:nth-child(n+10) .title {
+    padding-left: 20px;
+}
+
+.checkout ul.payment_methods .payment_box p {
+	color: #832121;
+}
+
+aside#sidebar.col-right div.primary div#woo_subscribe-2.widget aside#connect.widget div.container div p:empty {
+	display:none;
+}
+
+html body.home div#wrapper div#content.col-full aside#sidebar.col-right div.primary div#widget_tourdates-2.widget div.container {
+	display:none;
+}
+
+/***************** SHOP *****************/
+div#uniform-pa_size {
+	margin-left:10px;
+}
+
+table.variations div option, form.woocommerce_ordering option, select option{
+	background:#FAFAFA;
+	color:#7A7A7A;
+	padding-left:5px;
+	font-weight:normal;
+}
+
+
+div.cross-sells ul.products {
+    width: 90%;
+}
+
+div.cross-sells ul.products li.product { /*eliminates the bullet in the cross sell suggested product*/	
+    list-style: none outside none;
+}
+
+td.product-quantity div.quantity.buttons_added input.input-text.qty.text { /*attempt to shrink the quantity field down so both increase & decrease buttons fit on line*/
+	width:20%;
+}
+
+.single-product .summary .single_variation_wrap .single_variation {
+	background:none;
+}
+
+div.form-row.wooms {
+	width:54%;
+	padding-left: 5px;
+}
+
+span.wooms_label {
+	padding-left:7px;
+}
+
+.checkout ul.payment_methods {
+	padding: 0 0 0 3px;
+	
+}
+
+.checkout ul.payment_methods + .form-row #place_order { /*moves the button up to save space*/
+    margin-top: -22px;
+}
+
+/*************** HOMEPAGE ****************/
+/*hides the thumbnails on the front page while in temporary mode
+ul.video-thumbnails {
+	display: none;
+	}
+
+.widget_woo_videos .video-thumbnails li .rounded-border { 
+	display:none;
+}
+*/
+
+div.homepage-facebook {
+	float:right;
+	width: 77px;
+}
+
+div#facebook-like-button-generator h3 {
+	display:none;
+}
+
+.connect_widget .like_button_dark .connect_widget_text, .connect_widget .like_button_dark .connect_widget_confirmation {
+	color:#CCC !important;
+}
+
+/****************** HEADER ********************/
+.GBLikeButton {
+	float:right;
+    position: relative;
+    top: 8px;
+	margin-left: 10px;
+}
+
+#navigation {
+    clear: none;
+}
+
+/************ misc *********/
+.sharing div.googleplus1_button {
+    width: 45px;
+}
+
+div.pp_details p.pp_description{
+    color: grey !important;
+    font-size: 14px !important;
+    font-weight: bold;
+    line-height: 24px !important;
+}
