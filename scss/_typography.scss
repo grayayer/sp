@@ -1,36 +1,98 @@
 
+@font-face {
+    font-family: 'brothers';
+    src: url('fonts/Brothers.eot');
+    src: url('fonts/Brothers.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Brothers.woff2') format('woff2'),
+         url('fonts/Brothers.woff') format('woff'),
+         url('fonts/Brothers.ttf') format('truetype'),
+         url('fonts/Brothers.svg#brothers') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* theme exports */
+
+
+body {
+	font:normal 12px/1.5em 'Droid Serif', arial, sans-serif;
+}
+
+#navigation, #navigation .nav a {
+	font:normal 1.2em/1.4em 'brothers', arial, sans-serif;
+	color:$header_color;
+}
+
+.page header h1 {
+	font:normal 2em/1em 'brothers', arial, sans-serif;
+	color:$header_color;
+}
+
+.post header h1, .type-page header h1, .type-band_member header h1, .type-video header h1, .type-product header h1, .type-gallery header h1, .type-album header h1, .type-event header h1, #contact-page header h1, .type-press header h1, .post header h1, .type-page header h1, .type-band_member header h1, .type-video header h1, .type-product header h1, .type-gallery header h1, .type-album header h1, .type-event header h1, #contact-page header h1, .type-press header h1 {
+	font:normal 2em/1em 'brothers', arial, sans-serif;
+	color:$header_color;
+}
+
+.post-meta {
+	font:normal 12px/1em 'Droid Sans', arial, sans-serif;
+	color:#37231A;
+}
+
+.entry, .entry p {
+	font:normal 15px/1.5em 'Droid Serif', arial, sans-serif;
+	color:$text_dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: brothers, arial, sans-serif;
+}
+
+.widget h3 {
+	font:normal 1.7em/1em 'brothers', arial, sans-serif;
+	color:$header_color;
+}
+
+.widget h3 {
+	font:normal 1.7em/1em 'brothers', arial, sans-serif;
+	color:$header_color;
+}
+
+
+
 /************* TYPOGRAPHY ***********/
 
 
 
 body {
-	color:#FFF;
+	color:$text_dark;
 	background-color:transparent !important;
 }
 
 a, .ttw-music-player .tracklist {
-	color:#0CCCC8; /*a teal color*/
+	color:$link_color; /*a teal color*/
+    -webkit-transition: all 150ms ease-in-out;
+	-moz-transition: all 150ms ease-in-out;
+	-ms-transition: all 150ms ease-in-out;
+	-o-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;	
 }
 
 a:hover {
-    color: #88CCC9;
+    color: $header_color;
 }
 
 .entry blockquote p {
-    color: #32D3B8; /*A bright blue*/
+    color: $header_color;
 }
 
 .archive_header, header h1.out-box {
-font-family: "Fugaz One", serif;
+font-family: "brothers", serif;
 font-weight: normal;
 }
 
-.widget h3, .widget h2 {
-	text-shadow: 1px 2px 0px #18516A;
-}
 h1, h2{
-font-family: "Fugaz One", serif !important;
-text-shadow: 1px 2px 0px #18516A;
+	font-family: "brothers", serif !important;
+	text-shadow: 1px 2px 0px;
 }
 
 ul.products .product h3 {
@@ -43,4 +105,40 @@ p.wp-caption-text {
 
 .entry p.info, .entry li.info {
     color: #444 !important;
+}
+
+/*text-shadow*/
+h1, h2,
+#navigation .nav a,
+ {
+	text-shadow: 1px 1px 1px $text_shadow;
+}
+
+.widget h3, .widget h2, header h1.out-box {
+	text-shadow: 1px 2px 1px $text_shadow;
+}
+
+.slides {
+	h1, h2, h3, h4, h5 {
+		text-shadow: 1px 1px 1px $text_dark;
+	}
+}
+
+/* WOOCOMMERCE  */
+.woocommerce-page.woocommerce {
+	ul.products li.product .price {
+	  color: #7C1B19;
+	}
+
+	ul.products {
+		border: none;
+		background: transparent;
+		box-shadow: none;
+	}
+}
+
+i.social-icon {
+  font-size: 22px;
+  margin-left: 5px;
+  color: $light_tan;
 }

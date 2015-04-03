@@ -6,18 +6,11 @@
 /************* BACKGROUND ***********/
 
 html {
-		background: #25728d; /* Old browsers */
-background: -moz-linear-gradient(top,  #25728d 0%, #00a79d 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#25728d), color-stop(100%,#00a79d)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #25728d 0%,#00a79d 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #25728d 0%,#00a79d 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #25728d 0%,#00a79d 100%); /* IE10+ */
-background: linear-gradient(top,  #25728d 0%,#00a79d 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25728d', endColorstr='#00a79d',GradientType=0 ); /* IE6-9 */
+	background: $light_tan;
 }
 
 body {
-	background:url(images/clouds3.png) 0 0 no-repeat, url(images/clouds2.png) 0 0 no-repeat, url(images/clouds1.png) 0 0 no-repeat, url(images/bg-header-sunshine-offcenter.png) top center no-repeat;
+	background:url(images/bg_wood.jpg) 0 0 repeat,
 	}
 
 .cloud1 {
@@ -38,30 +31,6 @@ body {
   background-attachment: absolute;
 }
 
-/*
-#sunshine {
-	background: url(images/bg-header-sunshine-offcenter.png) repeat-X 5% 5%;
-	background-color:transparent;
-	position: fixed;
-	top: 0; left: 0; right: 0; bottom: 0;
-	z-index: 0;
-}
-
-#cloudbackground {
-	background: url(images/clouds3.png) repeat-X 5% 5%;
-	background-color:transparent;
-	position: fixed;
-	top: 0; left: 0; right: 0; bottom: 0;
-	z-index: 0;
-}
-
-#cloudmidground {
-	background: url(images/clouds2.png) repeat-X 50% 50%;
-	background-color:transparent;
-	position: fixed;
-	top: 0; left: 0; right: 0; bottom: 0;
-	z-index: 0;
-}*/
 
 #cloudforeground {
     background: url("images/clouds1.png") repeat-x transparent;
@@ -127,10 +96,4 @@ body {
 #corners-bottom-right.sprite {
 	background-position: -105px -105px; 
 	float:right;
-}
-
-@media only screen and (max-width: 767px) {
-	#corners-top, #corners-bottom {
-		display: none;
-	}
 }

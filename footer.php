@@ -35,6 +35,20 @@
 	</section><!-- /#footer-widgets  -->
 <?php } // End IF Statement ?>
 	<footer id="footer" class="col-full">
+		<div id="social">
+    			<a title="Connect with me on Facebook" href="http://www.facebook.com//ScottPembertonMusic/">
+    				<i class="social-icon fa fa-facebook-square" data-shiftnav-icon="fa fa-facebook-square"></i>
+    			</a>
+                <a title="Connect with me on Twitter" href="http://twitter.com/#!/scottpemberton1">
+                	<i class="social-icon fa fa-tumblr-square" data-shiftnav-icon="fa fa-tumblr-square"></i>
+                </a>
+                <a title="Connect with me on YouTube" href="http://www.youtube.com/user/leftorbit">
+                	<i class="social-icon fa fa-youtube-square" data-shiftnav-icon="fa fa-youtube-square"></i>
+            	</a>
+                <a title="Send me an email" href="mailto:Info@scottpemberton.com">
+                	<i class="social-icon fa fa-envelope" data-shiftnav-icon="fa fa-envelope"></i>
+            	</a>	
+		</div>
 
 		<div id="copyright" class="col-left">
 		<?php if( isset( $woo_options['woo_footer_left'] ) && $woo_options['woo_footer_left'] == 'true' ) {

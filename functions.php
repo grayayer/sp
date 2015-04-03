@@ -23,7 +23,7 @@ function my_admin_menu() {
 
 //*meta box addtion
 
-// custom admin login logo 
+/* custom admin login logo 
 function custom_login_logo() {
 	echo '
 	<style type="text/css">
@@ -38,6 +38,7 @@ function custom_login_logo() {
 	</style>';
 }
 add_action('login_head', 'custom_login_logo');
+*/
 
 /* 	DOESN'T WORK SO WELL AFTER WP VERSION 3.4.1
 // changing the login page URL
@@ -112,4 +113,30 @@ function add_more_buttons($buttons) {
 
 add_filter("mce_buttons_3", "add_more_buttons");
 */
+
+
+##################################################################
+
+// enable images in media uploader
+
+##################################################################
+function cc_mime_types( $mimes ){
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
+
+##################################################################
+
+// display images on media uploader and feature images
+
+##################################################################
+
+function fix_svg_thumb_display() {
+  echo '<style> td.media-icon img[src$=".svg"], img[src$=".svg"].attachment-post-thumbnail { width: 100% !important; height: auto !important; } </style>';
+}
+add_action('admin_head', 'fix_svg_thumb_display');
+
+#########
+
 ?>
