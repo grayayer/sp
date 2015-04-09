@@ -43,7 +43,12 @@ a.mobile_header_title {
 	#corners-top, #corners-bottom {
 		display:none;
 	}
-
+	
+	#footer #social {
+		float: none;
+		margin: 0 auto 1em;
+		display: table;
+	}
 
 }
 

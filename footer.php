@@ -56,12 +56,12 @@
 				echo stripslashes( $woo_options['woo_footer_left_text'] );
 
 		} else { ?>
-			<p><?php bloginfo(); ?> &copy; <?php echo date( 'Y' ); ?>. <?php _e( 'All Rights Reserved.', 'woothemes' ); ?></p>
+			<p><a href="http://www.scottpemberton.com">Scott Pemberton</a> &copy; <?php echo date( 'Y' ); ?>. <?php _e( 'All Rights Reserved.', 'woothemes' ); ?></p>
 		<?php } ?>
 		</div>
 
 		<div id="credit" class="col-right">
-<a href="http://www.studiok40.com/">Wordpress Web Development &amp; Design by Gray Ayer of StudioK40</a>	
+<a href="http://www.studiok40.com/">Web Development &amp; Design by Gray Ayer</a>	
 		</div>
 
 	</footer><!-- /#footer  -->

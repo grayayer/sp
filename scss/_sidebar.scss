@@ -46,17 +46,32 @@ div.player div.album-info div.album-content p.album-title {
 	border-bottom:none;
 }
 
-.ttw-music-player .tracklist li {
-    font-size: 1.167em;
-    padding: 5px 0 5px 15px;
-    position: relative;
+.ttw-music-player {
+    .tracklist {
+        li {
+            font-size: 1.167em;
+            padding: 5px 0 5px 15px;
+            position: relative;
+        }
+
+        ol {
+            margin: 0;
+            overflow: hidden;
+            padding: 7px 0;
+        }
+        span.duration {
+            padding-left: 5px;
+            &:before {
+              content: "\2013";
+              padding-right: 5px;
+            }
+        }
+    }
 }
 
-.ttw-music-player .tracklist ol {
-    margin: 0;
-    overflow: hidden;
-    padding: 7px 0;
-}
+.ttw-music-player .tracklist 
+
+.ttw-music-player .tracklist 
 
 
 .checkout ul.payment_methods .payment_box p {

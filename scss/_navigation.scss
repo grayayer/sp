@@ -1,9 +1,9 @@
 
 #navigation .nav a {
     color: #FFFFFF;
-    font: 22px/1.4em 'Fugaz One',arial,sans-serif;
+    font: 22px/1.4em 'Brothers',arial,sans-serif;
 	//text-shadow: 1px 2px 0px #18516A;
-    padding: 5px 0.75em;
+    padding: 5px 0.6em;
     -webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
 	-ms-transition: all 300ms ease-in-out;
@@ -46,5 +46,12 @@ nav#navigation ul#main-nav.nav li.menu-item:last-of-type a {
     			}
 			}			
 		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	#navigation .nav li.last.parent > a:after {
+	  right: -1em;
+	  display: none;
 	}
 }
