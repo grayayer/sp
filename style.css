@@ -1,4 +1,4 @@
-/*
+/*!
 Theme Name: Scott Pemberton
 Theme URI: http://www.woothemes.com/2012/01/unsigned/
 Description: A child theme of WooThemes Unsigned.
@@ -7,7 +7,7 @@ Author: Gray Ayer
 Author URI: http://www.studiok40.com
 Version: 2.0
 Updated: 3/26/15
-*/
+!*/
 @import url("../unsigned/style.css");
 /* CSS Document */
 /******* Color definitions 
@@ -19,24 +19,20 @@ red gradient: goes from #7A1717 to #B62323
 
 */
 /****** COLORS ******/
-/* line 2, _background.scss */
 #header-wrap {
   background-color: #000 !important;
   /*currently it's set to an alpha transparency to allow for the background images to show through*/
 }
 
 /************* BACKGROUND ***********/
-/* line 8, _background.scss */
 html {
   background: #fffde3;
 }
 
-/* line 12, _background.scss */
 body {
   background: url(images/bg_wood.jpg) 0 0 repeat;
 }
 
-/* line 16, _background.scss */
 .cloud1 {
   width: 2000px;
   height: 692px;
@@ -49,14 +45,12 @@ body {
   z-index: -1;
 }
 
-/* line 28, _background.scss */
 #topclouds {
   background-image: url(images/top-clouds.png);
   background-repeat: no-repeat;
   background-attachment: absolute;
 }
 
-/* line 35, _background.scss */
 #cloudforeground {
   background: url("images/clouds1.png") repeat-x transparent;
   bottom: 0;
@@ -67,18 +61,15 @@ body {
   z-index: 0;
 }
 
-/* line 45, _background.scss */
 #wrapper {
   Xbackground: url(images/clouds.png) repeat-x;
   position: relative;
 }
 
-/* line 52, _background.scss */
 #corners-top, #corners-bottom {
   pointer-events: none;
 }
 
-/* line 56, _background.scss */
 #corners-top {
   position: absolute;
   top: 0;
@@ -87,7 +78,6 @@ body {
   min-width: 1260px;
 }
 
-/* line 64, _background.scss */
 #corners-bottom {
   position: absolute;
   bottom: 0;
@@ -98,7 +88,6 @@ body {
   /*makes up for the fact that the wrapper it's nested in has a 20px padding. I've stuck it in here so that it gets layered correctly in regards to the other footer data.*/
 }
 
-/* line 73, _background.scss */
 .sprite {
   width: 100px;
   height: 100px;
@@ -107,32 +96,27 @@ body {
   margin: 10px;
 }
 
-/* line 81, _background.scss */
 #corners-top-left.sprite {
   background-position: 0 0;
   float: left;
 }
 
-/* line 86, _background.scss */
 #corners-top-right.sprite {
   background-position: -105px 0;
   float: right;
 }
 
-/* line 91, _background.scss */
 #corners-bottom-left.sprite {
   background-position: 0 -105px;
   float: left;
 }
 
-/* line 96, _background.scss */
 #corners-bottom-right.sprite {
   background-position: -105px -105px;
   float: right;
 }
 
 /***************** HEADER *****************/
-/* line 5, _header.scss */
 #header {
   padding: 15px 0 10px;
   position: relative;
@@ -140,14 +124,12 @@ body {
   z-index: 10;
 }
 
-/* line 12, _header.scss */
 #header-wrap {
   border: none;
   background-color: transparent !important;
   padding: 0;
 }
 
-/* line 19, _header.scss */
 #header #logo {
   background: url(images/sp_logo_2015_web.svg) no-repeat left top;
   width: 333px;
@@ -155,23 +137,19 @@ body {
   display: block;
 }
 
-/* line 26, _header.scss */
 #header #logo img {
   display: none;
 }
 
-/* line 30, _header.scss */
 #social {
   height: 25px;
   display: block;
   top: 0;
   float: right;
 }
-/* line 36, _header.scss */
 #social a:hover {
   text-decoration: none;
 }
-/* line 40, _header.scss */
 #social a i.social-icon {
   font-size: 22px;
   margin-left: 5px;
@@ -182,12 +160,10 @@ body {
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 49, _header.scss */
 #social a i.social-icon:hover {
   color: #b62323;
 }
 
-/* line 56, _header.scss */
 .GBLikeButton {
   float: right;
   position: relative;
@@ -195,12 +171,10 @@ body {
   margin-left: 10px;
 }
 
-/* line 63, _header.scss */
 #navigation {
   clear: none;
 }
 
-/* line 67, _header.scss */
 #header {
   clear: both;
   padding: 20px 0 10px;
@@ -209,7 +183,6 @@ body {
 
 /* 2. MAIN NAVIGATION DROPDOWN MENUS */
 @media only screen and (min-width: 768px) {
-  /* line 76, _header.scss */
   #header #navigation #main-nav.nav li ul {
     margin: 0 0 0 -1px;
     position: absolute;
@@ -218,12 +191,10 @@ body {
     border: none !important;
     background: transparent;
   }
-  /* line 85, _header.scss */
   #header #navigation #main-nav.nav li ul.sf-sub-indicator {
     background: url(../images/arrow-superfish-right.png) no-repeat;
     top: 38%;
   }
-  /* line 89, _header.scss */
   #header #navigation #main-nav.nav li ul.sf-sub-indicator li a {
     color: #7a1717 !important;
     font-family: "Brothers", serif;
@@ -234,14 +205,12 @@ body {
     background: none;
     font-size: 0.8em;
   }
-  /* line 102, _header.scss */
   #header #navigation #main-nav.nav li ul.sf-sub-indicator:hover {
     text-decoration: underline;
     background: none;
     color: #871a1a;
   }
 }
-/* line 111, _header.scss */
 #navigation .nav li ul li.current_page_item a,
 #navigation .nav li ul li.current_page_parent a,
 #navigation .nav li ul li.current-menu-ancestor a,
@@ -251,12 +220,10 @@ body {
   background: none;
 }
 
-/* line 119, _header.scss */
 #navigation .nav li ul ul {
   margin: -37px 0 0 160px;
 }
 
-/* line 2, _navigation.scss */
 #navigation .nav a {
   color: #FFFFFF;
   font: 22px/1.4em 'Brothers',arial,sans-serif;
@@ -268,53 +235,43 @@ body {
   transition: all 300ms ease-in-out;
 }
 
-/* line 14, _navigation.scss */
 #navigation .nav a:hover {
   color: #7A1717;
 }
 
-/* line 19, _navigation.scss */
 #navigation {
   /* clear: both; */
   float: right;
   margin-top: 4px;
 }
 
-/* line 25, _navigation.scss */
 nav#navigation ul#main-nav.nav li.menu-item:first-of-type a {
   padding-left: 0px;
 }
 
-/* line 29, _navigation.scss */
 nav#navigation ul#main-nav.nav li.menu-item:last-of-type a {
   padding-right: 0px;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 34, _navigation.scss */
   nav#navigation ul#main-nav.nav {
     float: left;
     padding: 20px;
   }
-  /* line 37, _navigation.scss */
   nav#navigation ul#main-nav.nav li {
     float: left;
   }
-  /* line 39, _navigation.scss */
   nav#navigation ul#main-nav.nav li.menu-item:first-of-type a {
     padding-left: 0.75em !important;
   }
-  /* line 42, _navigation.scss */
   nav#navigation ul#main-nav.nav li.menu-item:last-of-type a {
     padding-right: 5px !important;
   }
-  /* line 44, _navigation.scss */
   nav#navigation ul#main-nav.nav li.menu-item:last-of-type a.sf-with-ul {
     padding-right: 20px !important;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 53, _navigation.scss */
   #navigation .nav li.last.parent > a:after {
     right: -1em;
     display: none;
@@ -322,72 +279,61 @@ nav#navigation ul#main-nav.nav li.menu-item:last-of-type a {
 }
 @font-face {
   font-family: 'brothers';
-  src: url("fonts/Brothers.eot");
-  src: url("fonts/Brothers.eot?#iefix") format("embedded-opentype"), url("fonts/Brothers.woff2") format("woff2"), url("fonts/Brothers.woff") format("woff"), url("fonts/Brothers.ttf") format("truetype"), url("fonts/Brothers.svg#brothers") format("svg");
+  src: url("fonts/brothers.eot");
+  src: url("fonts/brothers.eot?#iefix") format("embedded-opentype"), url("fonts/brothers.woff2") format("woff2"), url("fonts/brothers.woff") format("woff"), url("fonts/brothers.ttf") format("truetype"), url("fonts/brothers.svg#brothers") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 /* theme exports */
-/* line 17, _typography.scss */
 body {
   font: normal 12px/1.5em 'Droid Serif', arial, sans-serif;
 }
 
-/* line 21, _typography.scss */
 #navigation, #navigation .nav a {
   font: normal 1.2em/1.4em 'brothers', arial, sans-serif;
   color: #c06100;
 }
 
-/* line 26, _typography.scss */
 .page header h1 {
   font: normal 2em/1em 'brothers', arial, sans-serif;
   color: #c06100;
 }
 
-/* line 31, _typography.scss */
 .post header h1, .type-page header h1, .type-band_member header h1, .type-video header h1, .type-product header h1, .type-gallery header h1, .type-album header h1, .type-event header h1, #contact-page header h1, .type-press header h1, .post header h1, .type-page header h1, .type-band_member header h1, .type-video header h1, .type-product header h1, .type-gallery header h1, .type-album header h1, .type-event header h1, #contact-page header h1, .type-press header h1 {
   font: normal 2em/1em 'brothers', arial, sans-serif;
   color: #c06100;
 }
 
-/* line 36, _typography.scss */
 .post-meta {
   font: normal 12px/1em 'Droid Sans', arial, sans-serif;
   color: #37231A;
 }
 
-/* line 41, _typography.scss */
 .entry, .entry p {
   font: normal 15px/1.5em 'Droid Serif', arial, sans-serif;
   color: #38231e;
 }
 
-/* line 46, _typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: brothers, arial, sans-serif;
 }
 
-/* line 50, _typography.scss */
 .widget h3 {
   font: normal 1.7em/1em 'brothers', arial, sans-serif;
   color: #c06100;
 }
 
-/* line 55, _typography.scss */
 .widget h3 {
   font: normal 1.7em/1em 'brothers', arial, sans-serif;
   color: #c06100;
 }
 
 /************* TYPOGRAPHY ***********/
-/* line 66, _typography.scss */
 body {
   color: #38231e;
   background-color: transparent !important;
 }
 
-/* line 71, _typography.scss */
 a, .ttw-music-player .tracklist {
   color: #7a1717;
   /*a teal color*/
@@ -398,66 +344,54 @@ a, .ttw-music-player .tracklist {
   transition: all 150ms ease-in-out;
 }
 
-/* line 80, _typography.scss */
 a:hover {
   color: #c06100;
 }
 
-/* line 84, _typography.scss */
 .entry blockquote p {
   color: #c06100;
 }
 
-/* line 88, _typography.scss */
 .archive_header, header h1.out-box {
   font-family: "brothers", serif;
   font-weight: normal;
 }
 
-/* line 93, _typography.scss */
 h1, h2 {
   font-family: "brothers", serif !important;
   text-shadow: 1px 2px 0px;
 }
 
-/* line 98, _typography.scss */
 ul.products .product h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 102, _typography.scss */
 p.wp-caption-text {
   color: #242021;
 }
 
-/* line 106, _typography.scss */
 .entry p.info, .entry li.info {
   color: #444 !important;
 }
 
 /*text-shadow*/
-/* line 111, _typography.scss */
 h1, h2,
 #navigation .nav a {
   text-shadow: 1px 1px 1px #fffde3;
 }
 
-/* line 117, _typography.scss */
 .widget h3, .widget h2, header h1.out-box {
   text-shadow: 1px 2px 1px #fffde3;
 }
 
-/* line 122, _typography.scss */
 .slides h1, .slides h2, .slides h3, .slides h4, .slides h5 {
   text-shadow: 1px 1px 1px #38231e;
 }
 
 /* WOOCOMMERCE  */
-/* line 129, _typography.scss */
 .woocommerce-page.woocommerce ul.products li.product .price {
   color: #7C1B19;
 }
-/* line 133, _typography.scss */
 .woocommerce-page.woocommerce ul.products {
   border: none;
   background: transparent;
@@ -465,43 +399,36 @@ h1, h2,
 }
 
 /********* sidebar *********/
-/* line 4, _sidebar.scss */
 .widget.widget_events ul img {
   clear: both;
   float: none;
   margin: 0 30px 15px;
 }
 
-/* line 11, _sidebar.scss */
 #widget_tourdates-2 div:first-of-type {
   display: none;
   /*so that there isn't any descriptive text of which "tour" this is*/
 }
 
-/* line 15, _sidebar.scss */
 aside#connect div.container div p:first-of-type {
   display: none;
   /*so that there isn't any descriptive text above the sign up form*/
 }
 
-/* line 19, _sidebar.scss */
 div.primary div#widget_tourdates-2.widget table tbody tr td:last-of-type, div#widget_tourdates-2.widget table thead tr th:last-of-type, p.event-widget-venue {
   display: none;
 }
 
-/* line 23, _sidebar.scss */
 table td {
   /*makes sure that the defense table has enough padding on the right side to accommodate the 4/14/12 format*/
   padding: 6px 10px;
 }
 
 /*music player*/
-/* line 28, _sidebar.scss */
 .ttw-music-player li:nth-child(n+10) .title {
   padding-left: 20px;
 }
 
-/* line 32, _sidebar.scss */
 .ttw-music-player .album-info div.album-cover,
 .ttw-music-player .album-info,
 div.player div.album-info div.album-content,
@@ -517,34 +444,28 @@ div.player div.album-info div.album-content p.album-title {
 	font-weight:.7em;
 }
 */
-/* line 45, _sidebar.scss */
 .ttw-music-player .player-controls, div.ttw-music-player div.tracklist ol.tracks li.track {
   border-bottom: none;
 }
 
-/* line 51, _sidebar.scss */
 .ttw-music-player .tracklist li {
   font-size: 1.167em;
   padding: 5px 0 5px 15px;
   position: relative;
 }
-/* line 57, _sidebar.scss */
 .ttw-music-player .tracklist ol {
   margin: 0;
   overflow: hidden;
   padding: 7px 0;
 }
-/* line 62, _sidebar.scss */
 .ttw-music-player .tracklist span.duration {
   padding-left: 5px;
 }
-/* line 64, _sidebar.scss */
 .ttw-music-player .tracklist span.duration:before {
   content: "\2013";
   padding-right: 5px;
 }
 
-/* line 72, _sidebar.scss */
 .ttw-music-player .tracklist
 .ttw-music-player .tracklist
 .checkout ul.payment_methods .payment_box p {
@@ -552,18 +473,15 @@ div.player div.album-info div.album-content p.album-title {
 }
 
 /************* NEWSLETTER SIGNUP *************/
-/* line 84, _sidebar.scss */
 div.primary .gform_wrapper .gform_footer {
   margin: 0;
   padding: 0;
 }
 
-/* line 89, _sidebar.scss */
 div.gform_body ul.gform_fields li.gfield {
   border-bottom: 0;
 }
 
-/* line 93, _sidebar.scss */
 div.primary div#gform_widget-2.widget div#gform_wrapper_1 div.gform_body ul#gform_fields_1.gform_fields {
   background-color: transparent;
   border: none;
@@ -571,7 +489,6 @@ div.primary div#gform_widget-2.widget div#gform_wrapper_1 div.gform_body ul#gfor
   box-shadow: 0;
 }
 
-/* line 100, _sidebar.scss */
 div.primary div#gform_widget-2.widget div#gform_wrapper_1 {
   background-color: rgba(0, 0, 0, 0.1);
   border: 1px solid #562c14;
@@ -583,41 +500,34 @@ div.primary div#gform_widget-2.widget div#gform_wrapper_1 {
   -moz-box-shadow: 0 -1px 0 0 #3B3A3A;
 }
 
-/* line 111, _sidebar.scss */
 div.widget form div.gform_body ul.gform_fields li.gfield.clear_input label.gfield_label {
   display: none;
 }
 
-/* line 115, _sidebar.scss */
 div.widget form div.gform_body ul.gform_fields li.gfield.clear_input {
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-/* line 120, _sidebar.scss */
 div#gform_wrapper_1 form#gform_1 div.gform_body ul#gform_fields_1.gform_fields li#field_1_1.gfield div.gfield_description {
   font-size: 1em;
 }
 
-/* line 124, _sidebar.scss */
 ul#gform_fields_1.gform_fields li.gfield div.ginput_container input.medium {
   width: 95%;
 }
 
-/* line 128, _sidebar.scss */
 div#gform_wrapper_1 form#gform_1 div.gform_footer {
   padding: 5px 10px;
 }
 
 /*sharing buttons (this aligns the text and buttons on one line, rather than two*/
-/* line 134, _sidebar.scss */
 div.sharedaddy div.sd-content {
   float: left;
   margin: -2px 0 0;
   width: auto;
 }
 
-/* line 140, _sidebar.scss */
 div.sharedaddy h3.sd-title {
   width: auto !important;
   float: left !important;
@@ -625,12 +535,10 @@ div.sharedaddy h3.sd-title {
 }
 
 /************ misc *********/
-/* line 3, _misc.scss */
 .sharing div.googleplus1_button {
   width: 45px;
 }
 
-/* line 7, _misc.scss */
 div.pp_details p.pp_description {
   color: grey !important;
   font-size: 14px !important;
@@ -638,20 +546,17 @@ div.pp_details p.pp_description {
   line-height: 24px !important;
 }
 
-/* line 14, _misc.scss */
 img#wpstats {
   /*hides the smiley face*/
   display: none;
 }
 
-/* line 18, _misc.scss */
 a.button, a.comment-reply-link, #commentform #submit, .submit, input[type="submit"], input.button, button.button {
   text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.3);
   -moz-text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.3);
   -webkit-text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 24, _misc.scss */
 .flexslider .slides .slide {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -664,12 +569,10 @@ a.button, a.comment-reply-link, #commentform #submit, .submit, input[type="submi
 }
 
 /***************** FOOTER *****************/
-/* line 4, _footer.scss */
 html body.home div#wrapper footer#footer.col-full div#credit.col-right {
   z-index: 10;
 }
 
-/* line 8, _footer.scss */
 html body.home div#wrapper footer#footer.col-full, div#copyright.col-left p, div#credit.col-right a {
   color: #38231e;
   font-weight: bold;
@@ -683,66 +586,54 @@ ul.video-thumbnails {display: none;}
 	display:none;
 }
 */
-/* line 13, _homepage.scss */
 .flexslider .slides img.alignleft {
   padding: 0 15px 15px 0;
 }
 
-/* line 17, _homepage.scss */
 .slide {
   padding: 10px;
   overflow: auto;
   /*ensures that if images are inserted that are quite tall, that this area will expand to fit that*/
 }
 
-/* line 23, _homepage.scss */
 div.homepage-facebook {
   float: right;
   width: 77px;
 }
 
-/* line 28, _homepage.scss */
 div#facebook-like-button-generator h3 {
   display: none;
 }
 
-/* line 32, _homepage.scss */
 .connect_widget .like_button_dark .connect_widget_text, .connect_widget .like_button_dark .connect_widget_confirmation {
   color: #CCC !important;
 }
 
-/* line 36, _homepage.scss */
 .home #content {
   clear: right;
 }
 
 /******************* SHOP ***********************/
-/* line 5, _store.scss */
 ul.products .product.first {
   margin-left: 0;
 }
 
-/* line 9, _store.scss */
 ul.products {
   padding: 5px 10px;
 }
 
-/* line 13, _store.scss */
 table.cart a.button {
   padding: .5em 1em;
 }
 
-/* line 17, _store.scss */
 table.cart a.button.checkout-button {
   margin: 0 10px;
 }
 
-/* line 22, _store.scss */
 div#uniform-pa_size {
   margin-left: 10px;
 }
 
-/* line 26, _store.scss */
 table.variations div option, form.woocommerce_ordering option, select option {
   background: #FAFAFA;
   color: #7A7A7A;
@@ -750,52 +641,43 @@ table.variations div option, form.woocommerce_ordering option, select option {
   font-weight: normal;
 }
 
-/* line 34, _store.scss */
 div.cross-sells ul.products {
   width: 90%;
 }
 
-/* line 38, _store.scss */
 div.cross-sells ul.products li.product {
   /*eliminates the bullet in the cross sell suggested product*/
   list-style: none outside none;
 }
 
-/* line 42, _store.scss */
 td.product-quantity div.quantity.buttons_added input.input-text.qty.text {
   /*attempt to shrink the quantity field down so both increase & decrease buttons fit on line*/
   width: 20%;
 }
 
-/* line 46, _store.scss */
 .single-product .summary .single_variation_wrap .single_variation {
   background: none;
 }
 
-/* line 50, _store.scss */
 div.form-row.wooms {
   width: 54%;
   padding-left: 5px;
 }
 
-/* line 55, _store.scss */
 span.wooms_label {
   padding-left: 7px;
 }
 
-/* line 59, _store.scss */
 .checkout ul.payment_methods {
   padding: 0 0 0 3px;
 }
 
-/* line 64, _store.scss */
 .checkout ul.payment_methods + .form-row #place_order {
   /*moves the button up to save space*/
   margin-top: -22px;
 }
 
 /*general responsive rules */
-/* line 3, _responsive.scss */
 a.mobile_header_title {
   font-family: brothers;
   text-transform: uppercase;
@@ -805,7 +687,6 @@ a.mobile_header_title {
   background: transparent;
   z-index: 0;
 }
-/* line 12, _responsive.scss */
 a.mobile_header_title:before {
   content: 'SCOTT PEMBERTON';
   position: absolute;
@@ -815,28 +696,23 @@ a.mobile_header_title:before {
 }
 
 @media only screen and (max-width: 320px) {
-  /* line 22, _responsive.scss */
   a.mobile_header_title {
     font-size: 24px;
     float: left;
   }
-  /* line 25, _responsive.scss */
   a.mobile_header_title:before {
     -webkit-text-stroke: 1.75px #fffde3;
   }
 
-  /* line 30, _responsive.scss */
   #shiftnav-toggle-main .shiftnav-toggle-burger {
     padding: 16px 8px;
   }
 
-  /* line 34, _responsive.scss */
   #shiftnav-toggle-main .shiftnav-main-toggle-content {
     padding: 16px;
   }
 }
 @media only screen and (max-width: 960px) {
-  /* line 40, _responsive.scss */
   #header a#logo,
   #header,
   #navigation.col-right,
@@ -844,7 +720,6 @@ a.mobile_header_title:before {
     display: none;
   }
 
-  /* line 47, _responsive.scss */
   #footer #social {
     float: none;
     margin: 0 auto 1em;
@@ -852,7 +727,6 @@ a.mobile_header_title:before {
   }
 }
 @media only screen and (min-width: 961px) {
-  /* line 56, _responsive.scss */
   #footer #social {
     display: none;
   }
