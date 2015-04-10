@@ -118,3 +118,11 @@ $(document).ready(function(){
   };
 // Works with either jQuery or Zepto
 })( window.jQuery || window.Zepto );
+
+
+// specific for scott pemberton
+
+  $(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $("#content").fitVids();
+  });
