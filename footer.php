@@ -61,7 +61,7 @@
 		</div>
 
 		<div id="credit" class="col-right">
-<a href="http://www.studiok40.com/">Web Development &amp; Design by Gray Ayer</a>	
+		<a href="http://www.studiok40.com/">Web Development &amp; Design by Gray Ayer</a>	
 		</div>
 
 	</footer><!-- /#footer  -->
@@ -74,25 +74,7 @@
 <?php wp_footer(); ?>
 <?php woo_foot(); ?>
 
-<script>
-// CLEAR FORM FIELDS OF LABEL ON FOCUS THEN ADD BACK ON BLUR IF EMPTY (class of 'clear_field' must be added to form field) //
- 
-$(document).ready(function(){
-	$(".clear_field input").focus(function () {
-		var origval = $(this).val();
-		$(this).val("");
-		//console.log(origval);
-		$(".clear_field input").blur(function () {
-			if($(this).val().length === 0 ) {
-				$(this).val(origval);
-				origval = null;
-			}else{
-				origval = null;
-			};
-		});
-	});
-});
-</script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/scripts.js"></script>
 
 </div><!--ends top cloud div-->
 
