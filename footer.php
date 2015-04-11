@@ -74,7 +74,9 @@
 <?php wp_footer(); ?>
 <?php woo_foot(); ?>
 
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/scripts.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.fitvids.js"></script>
+
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/min/scripts.min.js"></script>
 
 </div><!--ends top cloud div-->
 

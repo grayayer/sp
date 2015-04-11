@@ -2937,8 +2937,16 @@ ul.video-thumbnails {display: none;}
 	display:none;
 }
 */
+.flexslider {
+  /* Hide the slides before the JS is loaded. Avoids image jumping */
+}
 .flexslider .slides img.alignleft {
   padding: 0 15px 15px 0;
+}
+.flexslider .slides img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 .slide {
@@ -3075,6 +3083,12 @@ a.mobile_header_title:before {
     float: none;
     margin: 0 auto 1em;
     display: table;
+  }
+
+  /*fit vids responsive video override */
+  .fluid-width-video-wrapper iframe {
+    height: auto !important;
+    width: 100% !important;
   }
 }
 @media only screen and (min-width: 961px) {
