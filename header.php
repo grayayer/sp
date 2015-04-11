@@ -87,7 +87,7 @@
     					<i class="social-icon fa fa-facebook-square" data-shiftnav-icon="fa fa-facebook-square"></i>
     				</a>
                     <a title="Connect with me on Twitter" href="http://twitter.com/#!/scottpemberton1">
-                    	<i class="social-icon fa fa-tumblr-square" data-shiftnav-icon="fa fa-tumblr-square"></i>
+                    	<i class="social-icon fa fa-twitter-square" data-shiftnav-icon="fa fa-twitter-square"></i>
                     </a>
                     <a title="Connect with me on YouTube" href="http://www.youtube.com/user/leftorbit">
                     	<i class="social-icon fa fa-youtube-square" data-shiftnav-icon="fa fa-youtube-square"></i>
