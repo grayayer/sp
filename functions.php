@@ -46,9 +46,10 @@ function woo_custom_query_filter( $query ) {
 
 add_filter( 'woo_events_query_order_direction', 'woo_custom_events_query_order_direction' );
 
-function woo_custom_events_query_order_direction ( $direction ) {
-	return 'ASC';
-} // End woo_custom_events_query_order_direction()
+function woo_custom_events_query_order_direction ( $order ) {
+	return 'DESC';
+} 
+// End woo_custom_events_query_order_direction()
 
 
 
