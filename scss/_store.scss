@@ -64,3 +64,7 @@ span.wooms_label {
 .checkout ul.payment_methods + .form-row #place_order { /*moves the button up to save space*/
     margin-top: -22px;
 }
+
+form.woocommerce-ordering { /*hides the unnecessary select box for ordering by XXX*/
+  display: none;
+}
