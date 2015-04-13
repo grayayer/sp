@@ -103,7 +103,6 @@
 		?>
 		<?php if ( ! isset( $woo_options['woo_texttitle'] ) || $woo_options['woo_texttitle'] != 'true' ) { ?>
 		    <a id="logo" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'description' ); ?>">
-		    	<img src="<?php echo $logo; ?>" alt="<?php bloginfo( 'name' ); ?>" />
 		    </a>
 	    <?php } ?>
 	    
