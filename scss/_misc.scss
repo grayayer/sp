@@ -31,3 +31,9 @@ a.button, a.comment-reply-link, #commentform #submit, .submit, input[type="submi
   -moz-box-shadow: 0px -1px 0px 0px #3b3a3a;
   -o-box-shadow: 0px -1px 0px 0px #3b3a3a;
 }
+
+/*this keeps the share buttons in the boxes instead of awkwardly outside*/
+#content div.sharedaddy, #main div.sharedaddy, div.sharedaddy {
+  clear: both;
+  display: inline-block;
+}
