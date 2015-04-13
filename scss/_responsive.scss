@@ -35,6 +35,14 @@ a.mobile_header_title {
 	#shiftnav-toggle-main .shiftnav-main-toggle-content {
 	  padding: 16px;
 	}
+
+
+}
+@media only screen and (max-width: 320px) {
+
+	ul.products .product { /*because of unequal heights of products, we make this 1 product per row to fill the screen better */
+	  width: 81%;	
+	}
 }
 
 @media only screen and (max-width: 960px) {
@@ -63,5 +71,4 @@ a.mobile_header_title {
 	#footer #social {
 		display: none;
 	}
-
 }
