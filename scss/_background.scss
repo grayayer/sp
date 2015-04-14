@@ -6,11 +6,11 @@
 /************* BACKGROUND ***********/
 
 html {
-	background: $light_tan;
+	background: url(images/bg_wood.jpg) 0 0 repeat $light_tan;
 }
 
 body {
-	background:url(images/bg_wood.jpg) 0 0 repeat,
+	background: transparent;
 	}
 
 .cloud1 {
