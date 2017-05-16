@@ -20,7 +20,29 @@ ul.video-thumbnails {display: none;}
 	  display: block;
 	  height: auto;
 	}
+
+	.flex-direction-nav li a{
+		display: none;
+		/*
+	    display: block;
+	    text-indent: -9999em;
+	    height: 45px;
+	    width: 45px;
+		&.flex-prev {
+    		background: url(images/slider-prev.png) no-repeat scroll center center linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+    		float: left;
+		}
+		&.flex-next {
+    		background: url(images/slider-next.png) no-repeat scroll center center linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);				
+    		float: right;
+		}
+		&:hover {
+			opacity: .8;
+		}*/
+	}
 }
+
+
 
 .slide { 
     padding: 10px;
